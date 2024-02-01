@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="user_list" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d483ad59-6762-4ee2-888d-38e7f391ef52">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     user_signup.`id` AS user_signup_id,
+     user_signup.`firstname` AS user_signup_firstname,
+     user_signup.`LastName` AS user_signup_LastName,
+     user_signup.`EmailAddress` AS user_signup_EmailAddress,
+     user_signup.`ContactNumber` AS user_signup_ContactNumber,
+     user_signup.`Addresslane1` AS user_signup_Addresslane1,
+     user_signup.`Addresslane2` AS user_signup_Addresslane2,
+     user_signup.`State` AS user_signup_State,
+     user_signup.`District` AS user_signup_District,
+     user_signup.`City` AS user_signup_City,
+     user_signup.`Pincode` AS user_signup_Pincode,
+     user_signup.`Password` AS user_signup_Password,
+     user_signup.`ConfirmPassword` AS user_signup_ConfirmPassword
+FROM
+     `user_signup` user_signup]]>
+	</queryString>
+	<field name="user_signup_id" class="java.lang.Integer"/>
+	<field name="user_signup_firstname" class="java.lang.String"/>
+	<field name="user_signup_EmailAddress" class="java.lang.String"/>
+	<field name="user_signup_ContactNumber" class="java.lang.String"/>
+	<field name="user_signup_Addresslane1" class="java.lang.String"/>
+	<field name="user_signup_Password" class="java.lang.String"/>
+	<field name="user_signup_ConfirmPassword" class="java.lang.String"/>
+	<group name="user_signup_id">
+		<groupExpression><![CDATA[$F{user_signup_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="291" y="28" width="162" height="37" uuid="38a44c25-6383-45c3-a662-8900852936fc"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[User List]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="114" height="20" uuid="1a39c613-cb1c-4e29-8bbf-af0398d9ec43"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Signup Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="114" height="20" uuid="3e7d9149-9a0d-4623-aa93-485808402b87"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="114" height="20" uuid="33788005-45d8-47f2-8068-88483fa2444b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="114" height="20" uuid="daded0da-399f-4ae7-af52-298eada5ae35"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact Numbver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="0" width="114" height="20" uuid="212e9cc6-7c67-4325-a57c-adc1fb43908d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address Line1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="570" y="0" width="114" height="20" uuid="9d05298d-f6e9-4e6e-8bb5-a69fc1659e06"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="684" y="0" width="114" height="20" uuid="055a83fd-55b3-438a-883a-d0d36f17d2a0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Confirm Password]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="114" height="20" uuid="9752f25b-174c-42e4-8bcd-e26a6f90311c"/>
+				<textFieldExpression><![CDATA[$F{user_signup_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="0" width="114" height="20" uuid="a986fa6c-8027-4d66-83d4-83c7df125cc0"/>
+				<textFieldExpression><![CDATA[$F{user_signup_firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="114" height="20" uuid="017cc4d9-e558-4910-bf03-2f30f2c12c24"/>
+				<textFieldExpression><![CDATA[$F{user_signup_EmailAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="0" width="114" height="20" uuid="639c4bdb-204c-49fe-8785-2d24b4704a57"/>
+				<textFieldExpression><![CDATA[$F{user_signup_ContactNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="0" width="114" height="20" uuid="e332657f-827c-40ce-9eb2-fe86b0faef39"/>
+				<textFieldExpression><![CDATA[$F{user_signup_Addresslane1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="0" width="114" height="20" uuid="0227c809-037a-487d-9fd0-7f02109629ff"/>
+				<textFieldExpression><![CDATA[$F{user_signup_Password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="684" y="0" width="114" height="20" uuid="372f6fc7-f74b-4f98-b772-5af11463fa43"/>
+				<textFieldExpression><![CDATA[$F{user_signup_ConfirmPassword}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+ body{
+                
+                 background-repeat:no-repeat;
+                background-size: 100%;
+                
+            }
+            .whitediv
+            {
+                height: 500px;
+                width: 800px;
+                margin-left:220px;
+                margin-top: 30px;
+                background-color: white;
+                 opacity: 0.9;
+                outline: 2px solid;
+                
+            }
+             .textbox   
+            {
+                height: 40px;
+                width: 200px;
+                margin-left: 40px;
+                margin-top:20px;
+                border-bottom-style: groove;
+                border-style: hidden;
+                font: inherit;
+               
+                border-style: solid;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                border-bottom-color: black;
+            }
+            .button
+            {
+                margin-left: 80px;
+                margin-top:50px;
+                height:40px;
+                width: 150px;
+                background-color: orangered;
+                border: none;
+            }
+            

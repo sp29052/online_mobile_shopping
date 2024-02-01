@@ -1,0 +1,32 @@
+/* 
+    Document   : customer_history
+    Created on : 25 Feb, 2023, 3:06:47 AM
+    Author     : hp
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+table
+{
+    height: 90%;
+    width: 90%;
+    background-color: #04AA6D;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+td
+{
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+}
+
+th
+{
+    height: 30px;
+}

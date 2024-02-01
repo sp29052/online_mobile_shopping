@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="address_list" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c890b09e-8ad6-44ac-8cbe-4b7e085d4701">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     address.`address_id` AS address_address_id,
+     address.`user_id` AS address_user_id,
+     address.`name` AS address_name,
+     address.`mobile_number` AS address_mobile_number,
+     address.`pincode` AS address_pincode,
+     address.`locality` AS address_locality,
+     address.`address` AS address_address,
+     address.`enter_city` AS address_enter_city,
+     address.`enter_state` AS address_enter_state,
+     address.`landmark` AS address_landmark,
+     address.`alternate_mobile_no` AS address_alternate_mobile_no
+FROM
+     `address` address]]>
+	</queryString>
+	<field name="address_address_id" class="java.lang.Integer"/>
+	<field name="address_user_id" class="java.lang.Integer"/>
+	<field name="address_name" class="java.lang.String"/>
+	<field name="address_mobile_number" class="java.lang.String"/>
+	<field name="address_pincode" class="java.lang.Long"/>
+	<field name="address_locality" class="java.lang.String"/>
+	<field name="address_address" class="java.lang.String"/>
+	<field name="address_enter_city" class="java.lang.String"/>
+	<field name="address_enter_state" class="java.lang.String"/>
+	<field name="address_landmark" class="java.lang.String"/>
+	<field name="address_alternate_mobile_no" class="java.lang.String"/>
+	<group name="address_address_id">
+		<groupExpression><![CDATA[$F{address_address_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="72" height="20" uuid="340d6f5a-3738-4f77-8c71-743499ebacfb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="0" width="72" height="20" uuid="3554e12a-1d33-49ce-8362-753b3062d2f5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="0" width="72" height="20" uuid="d344d9b3-4ccf-441c-af99-ae1d0124956b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="0" width="72" height="20" uuid="43bd6f58-801b-4a90-8dea-3308d2a021f4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="0" width="72" height="20" uuid="027d3599-dbfe-449f-b863-b337b19041ab"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pincode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="72" height="20" uuid="42bbd04f-354e-4f22-9311-53f060bc16ea"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Locality]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="0" width="72" height="20" uuid="a33f1bbc-5053-46e8-8ede-ff76ae0635a5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="0" width="72" height="20" uuid="c2ea9ab9-d740-4b5f-ac29-4796be59d321"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="576" y="0" width="72" height="20" uuid="76ce5c74-1405-4c36-9c33-8e3aba5b0523"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="648" y="0" width="72" height="20" uuid="4ada5347-b7b7-4cc6-ba35-8cffbba36f8e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Landmark]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="0" width="72" height="20" uuid="cf8eb0ab-0053-440e-8802-b804c5dc6029"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile No]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="71" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="72" height="20" uuid="34e55016-e541-4ea9-aafc-ffa255b2184e"/>
+				<textFieldExpression><![CDATA[$F{address_address_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="0" width="72" height="20" uuid="490e3639-90b1-457c-8cb0-3dde67189c2c"/>
+				<textFieldExpression><![CDATA[$F{address_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="0" width="72" height="20" uuid="c85dcc97-9a75-40c1-af09-70da79afeb66"/>
+				<textFieldExpression><![CDATA[$F{address_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="0" width="72" height="20" uuid="a2d94673-d0ab-4e6f-89ad-afa0cb8c4499"/>
+				<textFieldExpression><![CDATA[$F{address_mobile_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="0" width="72" height="20" uuid="3486d8e9-7f4b-4037-ac9a-44addb48e2ac"/>
+				<textFieldExpression><![CDATA[$F{address_pincode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="72" height="20" uuid="b30236fe-5b47-4082-bf1b-863b1abea791"/>
+				<textFieldExpression><![CDATA[$F{address_locality}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="0" width="72" height="20" uuid="8a950e42-46f8-4f66-96fa-1b327692cb56"/>
+				<textFieldExpression><![CDATA[$F{address_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="504" y="0" width="72" height="20" uuid="a963dcbb-1cdc-4035-97c5-9e2b67b03c60"/>
+				<textFieldExpression><![CDATA[$F{address_enter_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="576" y="0" width="72" height="20" uuid="7304ff56-6c3d-4a76-8e89-f8050c876422"/>
+				<textFieldExpression><![CDATA[$F{address_enter_state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="648" y="0" width="72" height="20" uuid="0c872108-44bd-41b8-a1b5-11cf31538ca8"/>
+				<textFieldExpression><![CDATA[$F{address_landmark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="720" y="0" width="72" height="20" uuid="dfb03c5c-7aec-4147-ba54-b0a5f4266f69"/>
+				<textFieldExpression><![CDATA[$F{address_alternate_mobile_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

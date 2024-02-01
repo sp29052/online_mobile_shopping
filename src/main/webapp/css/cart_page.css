@@ -1,0 +1,90 @@
+
+body
+{
+    background-color: bisque;
+}
+
+.mydiv
+{
+    height: 70%;
+    width: 70%;
+    background-color: navajowhite;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+label
+{
+    font-size: 20px;
+    font-family: Cambria Math;
+    background-position: center;
+    
+}
+
+.textbox1
+{
+    font-size: 25px;
+    margin-left:50px;
+}
+.textbox
+{
+    width: 200px;
+    margin-left:-30px;
+    
+}
+.btn
+{
+    background-color:blue ;
+    color: black;
+    margin-top: -10px;
+    height: 40px;
+    width: 180px;
+}
+.btn:hover
+{
+    background-color: gray;
+    color:white ;
+    
+        
+}body
+{
+    background-color: bisque;
+}
+
+.mydiv
+{
+    height: 60%;
+    width: 45%;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 400px;
+}
+label
+{
+    font-size: 20px;
+    font-family: Cambria Math;
+    background-position: center;
+    
+}
+
+.textbox1
+{
+    font-size: 15px;
+    margin-left:50px;
+}
+.textbox
+{
+    width: 200px;
+    margin-left:-30px;
+    
+}
+.btn
+{
+    background-color: orangered ;
+    color:  white;
+    margin-top: -10px;
+    height: 50px;
+    width: 180px;
+      cursor: inherit;
+}
+  
+

@@ -1,0 +1,68 @@
+/* 
+    Document   : address
+    Created on : 4 Mar, 2023, 12:07:32 AM
+    Author     : hp
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+                    background-image: url(images/Ss.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.h
+{
+    background-size: 40px;
+    font-size:40px;
+    font-family: cursive;
+    color:orange;
+  
+}
+.whitediv
+{
+    height: 550px;
+    width: 50%;
+    background-color:rgba(255,255,255,0.1);
+    margin-left:25%;
+    margin-top:50px;
+    outline: 2px solid;
+    border-radius: 10px;
+    
+}
+.textbox
+{
+    height: 40px;
+    width: 280px;
+    margin-left: 35px;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 17px;
+}
+label
+{
+	font-size: 25px;
+	padding-left: 300px;
+}
+.signupbutton
+{
+    height: 40px;
+    width:250px;
+    background-color: green;
+    color:black;
+    margin-top: 35px;
+    margin-left: 260px;
+    border-radius: 30px;
+    font-size: 17px;
+}
+.signupbutton:hover
+{
+    background-color: gray;
+    color: white; 
+}

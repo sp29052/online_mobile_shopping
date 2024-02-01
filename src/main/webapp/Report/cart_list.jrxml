@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cart_list" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81cc2a69-3171-4a00-9499-ddf6c50784c7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     cart.`cart_id` AS cart_cart_id,
+     cart.`user_id` AS cart_user_id,
+     cart.`product_id` AS cart_product_id,
+     cart.`image` AS cart_image,
+     cart.`product_name` AS cart_product_name,
+     cart.`company_name` AS cart_company_name,
+     cart.`price` AS cart_price,
+     cart.`country` AS cart_country,
+     cart.`quantity` AS cart_quantity,
+     cart.`total` AS cart_total
+FROM
+     `cart` cart]]>
+	</queryString>
+	<field name="cart_cart_id" class="java.lang.Integer"/>
+	<field name="cart_user_id" class="java.lang.Integer"/>
+	<field name="cart_product_id" class="java.lang.Integer"/>
+	<field name="cart_image" class="java.lang.String"/>
+	<field name="cart_product_name" class="java.lang.String"/>
+	<field name="cart_company_name" class="java.lang.String"/>
+	<field name="cart_price" class="java.lang.String"/>
+	<field name="cart_country" class="java.lang.String"/>
+	<field name="cart_quantity" class="java.lang.String"/>
+	<field name="cart_total" class="java.lang.String"/>
+	<group name="cart_cart_id">
+		<groupExpression><![CDATA[$F{cart_cart_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="20" uuid="9c88e56f-49cf-4fb7-beb0-79ade52ef60b"/>
+				<text><![CDATA[Cart Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="80" height="20" uuid="18ce8ce0-24f8-4a17-96d9-203cfbce6278"/>
+				<text><![CDATA[User Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="80" height="20" uuid="9ad8992f-fa64-4248-a143-81e47415931b"/>
+				<text><![CDATA[Product Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="80" height="20" uuid="2bf09028-8e9e-4df0-857d-e5c1279565a8"/>
+				<text><![CDATA[Image]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="80" height="20" uuid="fc060f42-cd77-44ad-878e-90b86496eda0"/>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="80" height="20" uuid="1c33cba6-339b-4fad-83d9-9282ca0c0166"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="80" height="20" uuid="1c5869a8-aac5-470d-9d22-d1a1596cb49e"/>
+				<text><![CDATA[cart_price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="560" y="0" width="80" height="20" uuid="83e51ae6-0864-4441-b533-e33fbc732b84"/>
+				<text><![CDATA[cart_country]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="640" y="0" width="80" height="20" uuid="985fa277-c214-469b-9080-f3b6976a884c"/>
+				<text><![CDATA[cart_quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="0" width="80" height="20" uuid="10f666d0-0b49-499f-b877-21e6d2a346cd"/>
+				<text><![CDATA[cart_total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="20" uuid="83b056ce-8afe-4b75-a721-c04f88d33dc0"/>
+				<textFieldExpression><![CDATA[$F{cart_cart_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="80" height="20" uuid="01797033-f69a-4d81-9722-3f761eec4d69"/>
+				<textFieldExpression><![CDATA[$F{cart_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="80" height="20" uuid="4d7da5a3-172a-47f1-9162-bcae942f72e7"/>
+				<textFieldExpression><![CDATA[$F{cart_product_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="80" height="20" uuid="867adc69-df1b-46e1-bf02-c8ce6eb827a2"/>
+				<textFieldExpression><![CDATA[$F{cart_image}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="80" height="20" uuid="3e2667ca-3fde-4273-99a6-2271bfa3846d"/>
+				<textFieldExpression><![CDATA[$F{cart_product_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="80" height="20" uuid="1ac0f2cc-47bc-4fdc-a434-8bb09d21ad90"/>
+				<textFieldExpression><![CDATA[$F{cart_company_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="80" height="20" uuid="e1a34c41-603b-478b-9224-93817da716a8"/>
+				<textFieldExpression><![CDATA[$F{cart_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="0" width="80" height="20" uuid="71c76008-ad9f-4630-b099-f439c331d95e"/>
+				<textFieldExpression><![CDATA[$F{cart_country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="0" width="80" height="20" uuid="01570689-3e39-4c62-9d2f-40e598f36c06"/>
+				<textFieldExpression><![CDATA[$F{cart_quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="720" y="0" width="80" height="20" uuid="54f3017e-7c87-4040-a19b-6c9195ad9496"/>
+				<textFieldExpression><![CDATA[$F{cart_total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

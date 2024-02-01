@@ -1,0 +1,66 @@
+/* 
+    Document   : user_login
+    Created on : 26 Jan, 2023, 1:31:38 AM
+    Author     : hp
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+}
+ body
+            {
+                background-image: url("images/2.jpg");
+               
+                background-size: cover;
+                
+                
+            }
+            .whitediv
+            {
+                height: 550px;
+                width: 700px;
+                margin-left: 300px;
+                margin-top: 35px;
+                margin-left:50px ;
+                outline: 2px solid black;
+                 background-size: cover;
+               
+                
+            }
+             .textbox   
+            {
+                height: 42px;
+                width: 250px;
+                margin-left:50px;
+                margin-top:30px;
+               border-bottom-style: ridge;
+               border-radius: 10px;
+                font: inherit;
+                background-color:whitesmoke;
+            }
+            .button
+            {
+                 margin-left: px;
+                 margin-top: 30px;
+                 width: 170px;
+                 height:40px;
+                 background-color: orange;
+                 border: none;
+                 border-radius: 10px;
+            }
+             .button:hover
+            {
+                
+                 width: 174px;
+                 height:45px;
+                 background-color: skyblue;
+                 border: none;
+                 border-radius: 10px;
+                 color: white;
+            }

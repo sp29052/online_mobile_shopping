@@ -1,0 +1,45 @@
+/* 
+    Document   : all_products
+    Created on : 6 Feb, 2023, 2:45:26 AM
+    Author     : hp
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    background-color: white;
+}
+.whitediv
+{
+    height: 500px;
+    width: 40%;
+    background-color:lightgrey;
+    margin-left: 400px;
+    margin-top: 50px;
+    outline: 2px solid;
+}
+.image_div
+{
+    height: 50%;
+    width: 100%;
+}
+.btn
+{
+    margin-top: 50px;
+    background-color: orange;
+    color: white;
+    height: 40px;
+    margin-left: -1px;
+    width: 120px;
+}
+
+label
+{
+    margin-top: 30px;
+    margin-left: 40px;
+}

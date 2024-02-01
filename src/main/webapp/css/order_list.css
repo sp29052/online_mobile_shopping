@@ -1,0 +1,45 @@
+/* 
+    Document   : order_list
+    Created on : 25 Feb, 2023, 3:44:41 AM
+    Author     : hp
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+table
+{
+    height: auto;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 15px;
+    border: 2px solid black	;
+    
+}
+td tr
+{
+    font-size: 15px;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+     border: 2px solid black	;
+    outline: 2px solid black;
+}
+th
+{
+	 border: 2px solid black	;
+	 text-align: center;
+	 height: 40px;
+	 background-color: bisque;
+    
+}
+td
+{
+	border: 2px solid black	;
+    text-align: center;
+	
+}
